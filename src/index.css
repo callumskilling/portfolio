@@ -1,69 +1,219 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --ff-serif: 'DM Serif Display';
+  --ff-sans-serif: 'Red Hat Display';
+
+  --fw-regular-400: 400;
+  --fw-medium-500: 500;
+  --fw-bold-700: 700;
+
+  --clr-dark-purple: hsl(274, 75%, 11%);
+  --clr-lavender: hsla(273, 39%, 91%, 1);
+  --clr-regalia: hsla(274, 42%, 35%, 1);
+  --clr-licorice: hsla(334, 93%, 6%, 1);
+  --clr-raspberry: hsla(334, 92%, 46%, 1);
+
+  --fs-xxl: 3.125rem;
+  --fs-xl: 2.5rem;
+  --fs-l: 1.1rem;
+  --fs-r: 1rem;
+  --fs-s: 0.9375rem;
+
+  --lh-xxl: 2em;
+  --lh-xl: 1.5em;
+  --lh-l: 1.2em;
+  --lh-r: 1em;
+  --lh-s: 0.8em;
+
+  --ls-xxl: 1em;
+  --ls-xl: 0.5em;
+  --ls-l: 0.02em;
+  --ls-r: 0em;
+  --ls-s: 0.05em
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: var(--clr-dark-purple);
+  min-height: 100dvh;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: var(--ff-serif);
+  font-size: var(--fs-xxl);
+  line-height: var(--lh-xxl);
+  letter-spacing: var(--ls-l);
+  color: var(--clr-lavender);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+p {
+  font-family: var(--ff-sans-serif);
+  font-size: var(--fs-l);
+  color: var(--clr-lavender);
+  letter-spacing: var(--ls-s);
+  line-height: var(--lh-xl);
+  max-width: 50rem;
+}
+
+.sr_only {
+  display: none;
+}
+
+/* dm-serif-display-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./src/assets/fonts/dm-serif-display-v12-latin-regular.woff2') format('woff2');
+}
+
+/* dm-serif-display-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'DM Serif Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./src/assets/fonts/dm-serif-display-v12-latin-italic.woff2') format('woff2');
+}
+
+
+
+
+/* red-hat-display-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-300.woff2') format('woff2');
+}
+
+/* red-hat-display-300italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 300;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-300italic.woff2') format('woff2');
+}
+
+/* red-hat-display-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-regular.woff2') format('woff2');
+}
+
+/* red-hat-display-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-italic.woff2') format('woff2');
+}
+
+/* red-hat-display-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-500.woff2') format('woff2');
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* red-hat-display-500italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 500;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-500italic.woff2') format('woff2');
+}
+
+/* red-hat-display-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-600.woff2') format('woff2');
+}
+
+/* red-hat-display-600italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 600;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-600italic.woff2') format('woff2');
+}
+
+/* red-hat-display-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-700.woff2') format('woff2');
+}
+
+/* red-hat-display-700italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-700italic.woff2') format('woff2');
+}
+
+/* red-hat-display-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-800.woff2') format('woff2');
+}
+
+/* red-hat-display-800italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 800;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-800italic.woff2') format('woff2');
+}
+
+/* red-hat-display-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-900.woff2') format('woff2');
+}
+
+/* red-hat-display-900italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: 900;
+  src: url('./src/assets/fonts/red-hat-display-v14-latin-900italic.woff2') format('woff2');
 }
