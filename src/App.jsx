@@ -1,7 +1,8 @@
-import { Routes, Route } from "react-router-dom"
-import { Home } from "./pages/Home"
-import { Navbar } from "./components/Navbar/Navbar"
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Home } from "./pages/Home";
+import { PortfolioIndex } from "./pages/PortfolioIndex";
+import { PortfolioDetail } from "./pages/PortfolioDetail";
 
 export const App = () => {
 
@@ -13,6 +14,10 @@ export const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/portfolio">
+            <Route index element={<PortfolioIndex />} />
+            <Route path=":projectName" element={<PortfolioDetail />} />
+          </Route>
         </Routes>
       </main>
     </>

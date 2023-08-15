@@ -6,8 +6,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --ff-serif: 'DM Serif Display';
-  --ff-sans-serif: 'Red Hat Display';
+  --ff-serif: DM Serif Display;
+  --ff-sans-serif: Red Hat Display;
 
   --fw-regular-400: 400;
   --fw-medium-500: 500;
@@ -69,6 +69,24 @@ p {
 
 .sr_only {
   display: none;
+}
+
+body {
+  padding: 2rem 0;
+  margin-inline: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+      margin-inline: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+      max-width: 68rem;
+      margin: auto;
+  }
 }
 
 /* dm-serif-display-regular - latin */

@@ -41,7 +41,6 @@ nav>ul>li>a:hover {
         transition: none;
         text-align: center;
         padding: 0;
-        flex-grow: 1;
         max-width: 30rem;
     }
 
