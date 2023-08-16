@@ -2,6 +2,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 2.5rem;
+}
+
+#site_title {
+    font-size: var(--fs-l);
+    font-family: var(--ff-sans-serif);
+    line-height: var(--lh-s);
+    transition: all 0.5s;
+    color: var(--clr-lavender);
+    cursor: pointer;
+    text-shadow: none;
+}
+
+#site_title:hover {
+    text-shadow:
+        2rem 2rem 0 #07bccc,
+        4rem 4rem 0 #e601c0,
+        6rem 6rem 0 #e9019a,
+        8rem 8rem 0 #f40468
+}
+
+#site_subtitle {
+    font-size: var(--fs-r);
+    font-family: var(--ff-sans-serif);
+    font-weight: var(--fw-regular-400);
 }
 
 @media only screen and (min-width: 768px) {

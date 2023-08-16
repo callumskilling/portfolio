@@ -21,7 +21,7 @@
 
   --fs-xxl: 3.125rem;
   --fs-xl: 2.5rem;
-  --fs-l: 1.1rem;
+  --fs-l: 1.5rem;
   --fs-r: 1rem;
   --fs-s: 0.9375rem;
 
@@ -30,12 +30,6 @@
   --lh-l: 1.2em;
   --lh-r: 1em;
   --lh-s: 0.8em;
-
-  --ls-xxl: 1em;
-  --ls-xl: 0.5em;
-  --ls-l: 0.02em;
-  --ls-r: 0em;
-  --ls-s: 0.05em
 }
 
 * {
@@ -45,26 +39,16 @@
   text-decoration: none;
 }
 
-body {
-  background: var(--clr-dark-purple);
-  min-height: 100dvh;
+h1, h2, h3, h4, p {
+  color: var(--clr-lavender);
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: var(--ff-serif);
-  font-size: var(--fs-xxl);
-  line-height: var(--lh-xxl);
-  letter-spacing: var(--ls-l);
-  color: var(--clr-lavender);
 }
 
 p {
   font-family: var(--ff-sans-serif);
-  font-size: var(--fs-l);
-  color: var(--clr-lavender);
-  letter-spacing: var(--ls-s);
-  line-height: var(--lh-xl);
-  max-width: 50rem;
 }
 
 .sr_only {
@@ -74,18 +58,20 @@ p {
 body {
   padding: 2rem 0;
   margin-inline: 1rem;
+  background: var(--clr-dark-purple);
+  min-height: 100dvh;
 }
 
 @media only screen and (min-width: 768px) {
   body {
-      margin-inline: 4rem;
+    margin-inline: 4rem;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   body {
-      max-width: 68rem;
-      margin: auto;
+    max-width: 68rem;
+    margin: auto;
   }
 }
 

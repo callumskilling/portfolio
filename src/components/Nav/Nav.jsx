@@ -12,6 +12,7 @@ const Nav = ({ navMenuOpen, setNavMenuOpen }) => {
             <nav id="nav_links" data-visible={navMenuOpen}>
                 <ul>
                     <li><NavLink to="/" onClick={handleClick}>Home</NavLink></li>
+                    <li><NavLink to="/portfolio" onClick={handleClick}>Portfolio</NavLink></li>
                 </ul>
             </nav>
         </>

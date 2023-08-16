@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div id="navbar">
             <Link to="/" onClick={GoToTop()}>
-                <p>Callum Skilling</p>
+                <h1 id="site_title" className="move-vertical">Callum Skilling<br /><span id="site_subtitle">Frontend Developer</span></h1>
             </Link>
             <Burger navMenuOpen={navMenuOpen} setNavMenuOpen={setNavMenuOpen} />
             <Nav navMenuOpen={navMenuOpen} setNavMenuOpen={setNavMenuOpen} />
