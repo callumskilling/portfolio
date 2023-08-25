@@ -30,6 +30,11 @@
   --lh-l: 1.2em;
   --lh-r: 1em;
   --lh-s: 0.8em;
+
+  --td-quick: 300ms;
+  
+  --ef-bouce-r: cubic-bezier(0.25, 1.5, 0.5, 1.5);
+  --ef-bounce-s: cubic-bezier(0.25, 1.1, 0.5, 1.1);
 }
 
 * {
@@ -39,11 +44,18 @@
   text-decoration: none;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   color: var(--clr-lavender);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--ff-serif);
 }
 
