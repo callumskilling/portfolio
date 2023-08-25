@@ -26,6 +26,7 @@
     border-right: solid 0.125rem var(--clr-raspberry);
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
+    margin: var(--mar-mobile);
     margin-block: 1rem;
     font-style: italic;
     font-weight: 500;
@@ -109,15 +110,11 @@
 
     #about_me_container p {
         font-weight: 800;
-        padding: 0 0 0 2rem;
+        padding: 0 4rem 0 2rem;
         border: none;
         margin: none;
         font-style: normal;
         text-align: left;
-    }
-
-    #home_hero_container {
-        margin: 4rem 0;
     }
 
     #home_hero_container:hover #headshot {
@@ -154,7 +151,7 @@
 
 @media only screen and (min-width: 1440px) {
     #home_hero_container {
-        max-width: 68rem;
-        margin: 4rem auto;
+        margin: var(--mar-desktop);
+        max-width: var(--wid-max);
     }
 }

@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    margin: var(--mar-mobile);
 }
 
 #site_title {
@@ -26,5 +27,15 @@
 @media only screen and (min-width: 768px) {
     #navbar {
         align-items: end;
+        margin: var(--mar-tablet);
+        padding: 3rem 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #navbar {
+        margin: var(--mar-desktop);
+        max-width: var(--wid-max);
+        padding: 0;
     }
 }

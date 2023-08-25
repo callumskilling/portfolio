@@ -31,6 +31,11 @@
   --lh-r: 1em;
   --lh-s: 0.8em;
 
+  --mar-mobile: 0 1rem;
+  --mar-tablet: 0 4rem;
+  --mar-desktop: 4rem auto;
+  --wid-max: 68rem;
+
   --td-quick: 300ms;
   
   --ef-bouce-r: cubic-bezier(0.25, 1.5, 0.5, 1.5);
@@ -68,23 +73,14 @@ p {
 }
 
 body {
-  padding: 2rem 0;
-  margin-inline: 1rem;
   background: var(--clr-dark-purple);
   min-height: 100dvh;
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    margin-inline: 4rem;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
-  body {
-    max-width: 68rem;
-    margin: auto;
-  }
 }
 
 /* dm-serif-display-regular - latin */
