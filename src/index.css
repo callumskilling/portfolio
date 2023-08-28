@@ -74,6 +74,11 @@ p {
 
 body {
   background: var(--clr-dark-purple);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
   min-height: 100dvh;
 }
 

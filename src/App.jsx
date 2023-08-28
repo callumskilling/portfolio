@@ -3,6 +3,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Home } from "./pages/Home";
 import { PortfolioIndex } from "./pages/PortfolioIndex";
 import { PortfolioDetail } from "./pages/PortfolioDetail";
+import { Footer } from "./components/Footer/Footer";
 
 export const App = () => {
 
@@ -20,6 +21,9 @@ export const App = () => {
           </Route>
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
