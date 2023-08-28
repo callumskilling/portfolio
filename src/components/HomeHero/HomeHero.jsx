@@ -18,10 +18,9 @@ export const HomeHero = () => {
     <>
       <div id="home_hero_container">
         <div id="about_me_container">
-          <p>I’m a frontend developer who loves building beautiful and functional websites that are user-friendly and responsive.</p>
+          <p>I’m a front-end developer who loves building beautiful and functional websites that are user-friendly and responsive.</p>
         </div>
         <div id="headshot_container">
-          <h2 id="home_hero_title">Callum Skilling<br /><span id="home_hero_subtitle">Frontend Developer</span></h2>
           <div id="headshot_wrapper">
             <picture id="headshot_lookup" className="headshot">
               <source media="(min-width: 1440px)" srcSet={`${headshot_lookup_desktop} 1544w, ${headshot_lookup_desktop_2x} 3088w`} />
