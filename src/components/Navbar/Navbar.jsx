@@ -13,7 +13,7 @@ const Navbar = () => {
             <Link to="/" onClick={GoToTop()}>
                 <div id="site_logo">
                     <Code fill="var(--clr-raspberry)" height="3.5rem"/>
-                    <h1 id="site_title">Callum Skilling<br /><span id="site_subtitle">Frontend Developer</span></h1>
+                    <h1 id="site_title">Callum Skilling<br /><span id="site_subtitle">Front-End Developer</span></h1>
                 </div>
             </Link>
             <Burger navMenuOpen={navMenuOpen} setNavMenuOpen={setNavMenuOpen} />
