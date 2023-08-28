@@ -1,0 +1,54 @@
+#blurb_container {
+    margin: var(--mar-mobile);
+}
+
+@media only screen and (min-width: 768px) {
+    #blurb_container {
+        margin: var(--mar-tablet);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #blurb_container {
+        margin: var(--mar-desktop);
+        max-width: var(--wid-max);
+    }
+}
+
+
+
+/* developer image animation */
+
+#developer_headphones {
+    opacity: 1;
+}
+
+#blurb_container:hover #developer_headphones {
+    opacity: 0;
+    transform: translate(0.5rem, -2rem) rotate(5deg);
+    transform-origin: center;
+    transition: opacity var(--td-quick) var(--ef-bounce-s), transform var(--td-quick) var(--ef-bounce-s);
+}
+
+#blurb_container:hover #developer_square_grid {
+    transform: translateY(9rem) translateX(-2rem);
+    transition: transform var(--td-quick) var(--ef-bounce-s);
+}
+
+#blurb_container:hover #developer_head {
+    transform: translate(0.5rem, 0.5rem) rotate(5deg);
+    transform-origin: center;
+    transition: transform var(--td-quick) var(--ef-bounce-s);
+}
+
+#blurb_container:hover #developer_background_blob {
+    transform: scale(90%);
+    transform-origin: center;
+    transition: transform var(--td-quick) var(--ef-bounce-s);
+}
+
+#blurb_container:hover #developer_person {
+    transform: scale(105%);
+    transform-origin: center;
+    transition: transform var(--td-quick) var(--ef-bounce-s);
+}
