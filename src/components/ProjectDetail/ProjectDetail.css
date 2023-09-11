@@ -1,0 +1,48 @@
+.project_detail_container {
+    display: grid;
+    gap: 2rem;
+    margin: var(--mar-mobile);
+    margin-block: 2rem;
+}
+
+.project_detail_info_wrapper,
+.project_detail_background,
+.project_detail_static_previews,
+.project_detail_preview_image > img,
+.project_detail_hero_image > img {
+    width: 100%;
+}
+
+.project_detail_project_info > a {
+    margin: 1rem;
+}
+
+.project_detail_tags_wrapper {
+    margin-block: 1rem;
+}
+
+.project_detail_project_tags,
+.project_detail_language_tags {
+    color: var(--clr-raspberry);
+}
+
+@media only screen and (min-width: 768px) {
+    .project_detail_info_wrapper {grid-area: info;}
+    .project_detail_background {grid-area: project_background;}
+    .project_detail_static_previews {grid-area: static_previews;}
+
+    .project_detail_container {
+        grid-template-areas:
+            "info project_background project_background"
+            "info static_previews static_previews";
+        margin: var(--mar-tablet);
+        margin-block: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .project_detail_page_container {
+        margin: var(--mar-desktop);
+        max-width: var(--wid-max);;
+    }
+}
