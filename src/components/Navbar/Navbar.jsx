@@ -12,7 +12,7 @@ const Navbar = () => {
         <div id="navbar">
             <Link to="/" onClick={GoToTop()}>
                 <div id="site_logo">
-                    <Code fill="var(--clr-raspberry)" height="3.5rem"/>
+                    <Code fill="var(--clr-raspberry)" height="2.5rem"/>
                     <h1 id="site_title">Callum Skilling<br /><span id="site_subtitle">Front-End Developer</span></h1>
                 </div>
             </Link>
