@@ -1,18 +1,18 @@
 import "./HomeHero.css"
 
 export const HomeHero = () => {
-  const headshot_desktop = "/src/assets/images/images/desktop/headshot_desktop.jpg"
-  const headshot_desktop_2x = "/src/assets/images/images/desktop/headshot_desktop_2x.jpg"
-  const headshot_tablet = "/src/assets/images/images/tablet/headshot_tablet.jpg"
-  const headshot_tablet_2x = "/src/assets/images/images/tablet/headshot_tablet_2x.jpg"
-  const headshot_mobile = "/src/assets/images/images/mobile/headshot_mobile.jpg"
-  const headshot_mobile_2x = "/src/assets/images/images/mobile/headshot_mobile_2x.jpg"
-  const headshot_lookup_desktop = "/src/assets/images/images/desktop/headshot_desktop_lookup.jpg"
-  const headshot_lookup_desktop_2x = "/src/assets/images/images/desktop/headshot_lookup_desktop_2x.jpg"
-  const headshot_lookup_tablet = "/src/assets/images/images/tablet/headshot_lookup_tablet.jpg"
-  const headshot_lookup_tablet_2x = "/src/assets/images/images/tablet/headshot_lookup_tablet_2x.jpg"
-  const headshot_lookup_mobile = "/src/assets/images/images/mobile/headshot_lookup_mobile.jpg"
-  const headshot_lookup_mobile_2x = "/src/assets/images/images/mobile/headshot_lookup_mobile`_2x.jpg"
+  const headshot_desktop = "/assets/images/desktop/headshot_desktop.jpg"
+  const headshot_desktop_2x = "/assets/images/desktop/headshot_desktop_2x.jpg"
+  const headshot_tablet = "/assets/images/tablet/headshot_tablet.jpg"
+  const headshot_tablet_2x = "/assets/images/tablet/headshot_tablet_2x.jpg"
+  const headshot_mobile = "/assets/images/mobile/headshot_mobile.jpg"
+  const headshot_mobile_2x = "/assets/images/mobile/headshot_mobile_2x.jpg"
+  const headshot_lookup_desktop = "/assets/images/desktop/headshot_desktop_lookup.jpg"
+  const headshot_lookup_desktop_2x = "/assets/images/desktop/headshot_lookup_desktop_2x.jpg"
+  const headshot_lookup_tablet = "/assets/images/tablet/headshot_lookup_tablet.jpg"
+  const headshot_lookup_tablet_2x = "/assets/images/tablet/headshot_lookup_tablet_2x.jpg"
+  const headshot_lookup_mobile = "/assets/images/mobile/headshot_lookup_mobile.jpg"
+  const headshot_lookup_mobile_2x = "/assets/images/mobile/headshot_lookup_mobile`_2x.jpg"
 
   return (
     <>
