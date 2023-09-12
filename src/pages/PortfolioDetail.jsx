@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { portfolioData } from '../assets/data/portfolioData';
 import { ProjectDetail } from "../components/ProjectDetail/ProjectDetail";
+import { ProjectDetailNav } from "../components/ProjectDetailNav/ProjectDetailNav";
 
 
 
@@ -12,6 +13,7 @@ const PortfolioDetail = () => {
         return (
             <>
                 <ProjectDetail project={project}/>
+                <ProjectDetailNav project={project}/>
             </>
         )        
     } else {
