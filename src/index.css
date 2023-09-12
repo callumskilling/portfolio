@@ -16,8 +16,8 @@
   --clr-dark-purple: hsl(274, 75%, 11%);
   --clr-lavender: hsla(273, 39%, 91%, 1);
   --clr-regalia: hsla(274, 42%, 35%, 1);
-  --clr-licorice: hsla(334, 93%, 6%, 1);
-  --clr-raspberry: hsla(334, 92%, 46%, 1);
+  --clr-licorice: hsl(335, 94%, 6%);
+  --clr-raspberry: hsl(334, 92%, 46%);
 
   --fs-xxl: 3.125rem;
   --fs-xl: 2.5rem;
@@ -76,6 +76,7 @@ h4 {
 
 p {
   font-family: var(--ff-sans-serif);
+  line-height: 150%;
 }
 
 .simple_link {
@@ -100,9 +101,23 @@ p {
   color: var(--clr-raspberry);
 }
 
+.inverse_link {
+  border: solid 1px var(--clr-dark-purple);
+  color: var(--clr-dark-purple);
+}
+
+.inverse_link:hover {
+  background-color: var(--clr-dark-purple);
+  color: var(--clr-raspberry);
+}
+
 
 .sr_only {
   display: none;
+}
+
+.mar_block_1 {
+  margin-block: 1rem;
 }
 
 @media only screen and (min-width: 768px) {}
