@@ -8,8 +8,8 @@
 .project_detail_info_wrapper,
 .project_detail_background,
 .project_detail_static_previews,
-.project_detail_preview_image > img,
-.project_detail_hero_image > img {
+.project_detail_preview_image_wrapper > picture > img,
+.project_detail_hero_image_wrapper > picture > img {
     width: 100%;
 }
 

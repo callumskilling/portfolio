@@ -6,7 +6,7 @@
     margin-block: 5rem;
 }
 
-.project_card_index_image > img {
+.project_card_index_image_wrapper > picture > img {
     width: 100%;
 }
 
@@ -35,7 +35,7 @@
         gap: 4rem;
     }
 
-    .project_card_index_image > img {
+    .project_card_index_image_wrapper > picture > img {
         grid-area: image;
     }
 }
